@@ -24,12 +24,12 @@ console.log(x * x *x);
   function circumference(r) {
     
 
-    console.log( 2 * pi * r);
+    console.log( 2 * Pi * r);
 
 
   }
    function area(r) {
-    console.log(2 * r * r);
+    console.log(Pi * r * r);
 
 
     
@@ -379,5 +379,7 @@ function lcm(a, b) {
 
 console.log(lcm(12, 15)); 
 console.log(lcm(24, 30)); 
+
+
 
 
