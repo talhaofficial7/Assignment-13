@@ -380,6 +380,65 @@ function lcm(a, b) {
 console.log(lcm(12, 15)); 
 console.log(lcm(24, 30)); 
 
+//22. Write a js program to display all array elements using function.
+
+
+var myarray=[1,2,3,4,5,6,7]
+
+function displayarray(array) {
+  for (var i = 0; i < array.length; i++) {
+    console.log(array[i]);
+    
+  }
+  
+}
+
+displayarray(myarray);
+
+
+//23. Write a js program to find sum of elements of array using function.
+
+
+var myarray1=[1,2,3,4,,5,6,7,8,9,10]
+
+function sumarray(array) {
+  var sum =0;
+  array.forEach(element => sum+=element) ;
+    console.log(sum);
+    
+  } 
+  
+
+sumarray(myarray1);
+
+
+//24. Write a js program to find maximum and minimum elements in array using function.
+
+var myArray = [12, 3, 45, 6, 89, 23, 11, 7, 9];
+function findMaxMin(array) {
+
+
+var max = array[0];
+  var min = array[0];
+  for (var i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    } else if (array[i] < min) {
+      min = array[i];
+    }
+  }
+  return { max, min };
+
+}
+
+var result = findMaxMin(myArray);
+
+
+console.log("Maximum element: ", result.max);
+console.log("Minimum element: ", result.min);
+
+
+
 
 
 
